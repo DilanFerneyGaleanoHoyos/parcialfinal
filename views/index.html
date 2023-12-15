@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My App</title>
+</head>
+<body>
+  <h1>Agregar Nuevo Plato</h1>
+  <form id="add-dish-form">
+    <label for="dish-name">Nombre:</label>
+    <input type="text" id="dish-name" name="name" required>
+
+    <label for="dish-calories">Calorías:</label>
+    <input type="number" id="dish-calories" name="calories" required>
+
+    <label for="dish-vegetarian">Vegetariano:</label>
+    <input type="checkbox" id="dish-vegetarian" name="isVegetarian">
+
+    <label for="dish-value">Valor:</label>
+    <input type="number" id="dish-value" name="value" required>
+
+    <label for="dish-comments">Comentarios:</label>
+    <textarea id="dish-comments" name="comments"></textarea>
+
+    <button type="button" id="insert-button">Agregar Plato</button>
+  </form>
+  <h2>Consultar Plato por ID</h2>
+  <label for="search-input">ID del Plato:</label>
+  <input type="text" id="search-input" name="searchId">
+  <button type="button" id="search-button">Buscar Plato</button>
+  <h1>Lista de Platos</h1>
+  <table id="dish-table" id="dish-table-body">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Calorías</th>
+        <th>Vegetariano</th>
+        <th>Valor</th>
+        <th>Comentarios</th>
+      </tr>
+    </thead>
+    <tbody id="dish-list">
+
+    </tbody>
+  </table>
+  <script src="/js/scripts.js"></script>
+</body>
+</html>
